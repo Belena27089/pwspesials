@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<links>
+<link>
+		<id>1</id>
+		<img>slides/slide_1.jpg</img>
+	</link>
+<link>
+		<id>2</id>
+		<field1>test1</field1>
+		<field2>test2</field2>
+		<url>ya.ru</url>
+		<img>slides/slide_2.jpg</img>
+	</link>
+<link>
+		<id>3</id>
+		<img>slides/slide_3.jpg</img>
+	</link>
+<link>
+		<id>4</id>
+		<img>slides/slide_4.jpg</img>
+	</link>
+</links>
