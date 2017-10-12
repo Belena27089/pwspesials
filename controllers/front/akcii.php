@@ -14,4 +14,21 @@ class PwspesialsAkciiModuleFrontController extends ModuleFrontController {
             $this->setTemplate('akcii.tpl');
         
     }
+
+    public static function getItems() {
+        if (file_exists(dirname(__FILE__) . '/views/templates/front/links.xml'))
+            if ($xml = simplexml_load_file(dirname(__FILE__) . '/views/templates/front/links.xml')) {
+                $arr = Array();
+
+                foreach ($xml->link as $key => $value) {
+                    if ($value->turnoff)
+                        continue;
+                    $arr[] = $value;
+                }
+                return $arr;
+            }
+        return false;
+    }
+
+}
 }
